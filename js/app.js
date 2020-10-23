@@ -115,7 +115,7 @@ function selectAnswer(e) {
         correctAnsElem.innerHTML = 
         "Your score :  " + countRightAnswers + "/" + questions.length; // span will show the score
     }
-    ansBtn.disabled = "true";
+    selectedBtn.disabled = "true";
     ansBtn.classList.add('disabled');
 
 }

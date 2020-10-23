@@ -73,7 +73,7 @@ button#btn:hover,
   bottom: 0;
   background-color: #fefefe;
   width: 100%;
-  height: 80%;
+  height: 60%;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
@@ -171,7 +171,7 @@ button#btn:hover,
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 580px) {
   /* The Modal (background) */
   .modal {
     display: none; /* Hidden by default */
@@ -310,8 +310,8 @@ a:hover {
 
 .about-btn {
   position: fixed;
-  bottom: 10px;
-  left: 10px;
+  bottom: 3px;
+  right: 30px;
   padding: 3px;
   background-color: rgba(0, 0, 0, 0);
   border: 3px solid white;
@@ -416,4 +416,46 @@ div.notepad {
 
 form.upload-quiz {
   margin: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #4e0097;
+}
+
+.footer p {
+  margin-top: 5px;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .about-btn {
+    bottom: 43px;
+    right: 3px;
+  }
+  .footer {
+    background-color: #000;
+  }
+  .nft-logo {
+    position: fixed;
+    bottom: 40px;
+  }
+
+  .hide-below-500 {
+    display: none;
+  }
+}
+
+.nft-logo {
+  position: fixed;
+  bottom: -5px;
+}
+
+.footer a {
+  color: white;
 }

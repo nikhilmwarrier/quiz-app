@@ -2,6 +2,7 @@ const staticCacheName = 'sillyquestions_static';
 const assets = [
                 '/',
                 '/index.html',
+                '/about.html',
                 '/js/main.js',
                 '/js/app.js',
                 '/css/index.css',
