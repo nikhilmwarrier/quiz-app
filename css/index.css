@@ -32,7 +32,8 @@ h4 {
   padding-top: 10%;
 }
 
-button#btn {
+button#btn,
+.btn {
   background-color: rgb(255, 0, 128);
   padding: 20px;
   border: 0px;
@@ -42,6 +43,11 @@ button#btn {
   font-size: 1.2rem;
   border-radius: 5px;
   color: white;
+}
+
+button#btn:hover,
+.btn:hover {
+  background-color: rgb(189, 3, 96);
 }
 
 .modal {
@@ -398,4 +404,16 @@ form.userfeedback textarea {
   form.userfeedback {
     margin-left: 38%;
   }
+}
+
+div.notepad {
+  background-color: #333333;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  overflow-x: scroll;
+}
+
+form.upload-quiz {
+  margin: 20px;
 }

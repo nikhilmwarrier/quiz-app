@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar" content="#8400ff" />
+    <meta name="theme-color" content="#8400ff" />
+    <title>Submit A Quiz</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <h1>Submit a Quiz</h1>
+    <h3><p>Keep in mind :</p></h3>
+    <ul>
+        <li><p>All quizzes submitted by users will be verified by a human being.</p></li>
+        <li><p>The submission file size should be less than 1 mb</p></li>
+        <li><p>The file submitted <b>must</b> be a plain text file (*.txt).</p></li>
+        <li><p>Max. number of questions are <b>10</b>.</p></li>
+        <li><p>The submission <b>must</b> be in the following format, else it will be rejected.</p></li>
+    </ul>
+    <br />
+    <h5><p>Format for user submission file:</p></h5>
+    <div class="notepad">
+    <pre>
+
+Title: Example Quiz
+
+1. This is an example question?
+-This is option 1 [correct]
+-This is option 2
+-This is option 3
+-This is option 4
+
+2. This is another example question?
+-This is option 1 
+-This is option 2
+-This is option 3
+-This is option 4  [correct]
+
+3. This is yet another example question?
+-This is option 1 
+-This is option 2  [correct]
+-This is option 3
+-This is option 4
+    </pre>
+    </div>
+    <form action="netlify" class="upload-quiz">
+        <label for="usrsubmission" class="file-upload btn" id="usrsubbtn">Choose Files</label>
+        <input type="file" name="usrsubmission" id="usrsubmission" hidden>
+        <button type="submit" class="btn submit">Upload</button>
+    </form>
+    </body>
+</html>

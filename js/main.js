@@ -51,3 +51,12 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+const uploadElem = document.querySelector('#usrsubmission');
+const uploadBtn = document.querySelector('#usrsubbtn');
+
+uploadBtn.addEventListener('change', function(){
+  console.log('clicked');
+  uploadBtn.textContent = this.files[0].name;
+});
+
