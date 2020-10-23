@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="res/icon_512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#8400ff" />
+    <meta name="theme-color" content="#8400ff" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="manifest" href="manifest.json">
+    <title>SillyQuestions Homepage</title>
+</head>
+<body>
+   <div class="container">
+       <img src="res/icon_512.png" alt="SQ_icon"
+       height="100px;"
+       width="100px"
+       />
+    <h1>Welcome to SillyQuestions <sup class="beta" title="This project is still under development">BETA</sup></h1>
+    <h4>A platform created for quizzes</h4><br />
+    <button id="btn">Try a quiz!</button>
+    <button class="install-btn" hidden>Open in WebApp</button>
+    <!-- Trigger/Open The Modal -->
+   </div>
+       <!-- The Modal -->
+<div id="Modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Available Quizzes: </h2>
+      </div>
+      <div class="modal-body">
+        <ul class="linklist">
+            <li><a href="quiz/test/">Test Quiz</a></li>
+            <li><a href="#">Not Available</a></li>
+            <li><a href="#">Not Available</a></li>
+            <li><a href="#">Not Available</a></li>
+            <li><a href="#">Not Available</a></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="#">+ add a quiz</a>
+      </div>
+    </div>
+</div>
+<script src="js/main.js" defer></script>
+</body>
+</html>
