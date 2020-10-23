@@ -138,7 +138,8 @@ shareScore.addEventListener('click', event => {
     if (navigator.share) {
       navigator.share({
         title: document.title,
-        url: "Hey! I scored " + countRightAnswers + "in " + document.title + "quiz at SillyQuestions! Try it yourself, and see if you can beat me!" + document.querySelector('link[rel=canonical]') ? document.querySelector('link[rel=canonical]').href : document.location.href,
+        text: "Hey! I scored " + countRightAnswers + "in " + document.title + "quiz at SillyQuestions! Try it yourself, and see if you can beat me!",
+        url:  document.querySelector('link[rel=canonical]') ? document.querySelector('link[rel=canonical]').href : document.location.href,
       }).then(() => {
         console.log('Thanks for sharing!');
       })
