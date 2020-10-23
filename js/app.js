@@ -2,8 +2,10 @@
 TODO: Add Point count system            [*]
 TODO: Disable options after clicking    [ ]
 TODO: Add Homepge                       [*]
-TODO: Add manifest, make PWA            [ ]
+TODO: Add manifest, make PWA            [*]
 */
+
+console.log('app.js active!');
 
 const homeBtn = document.querySelector('#home-btn');
 const startBtn = document.querySelector('#start-btn');
@@ -138,7 +140,7 @@ shareScore.addEventListener('click', event => {
     if (navigator.share) {
       navigator.share({
         title: document.title,
-        text: "Hey! I scored " + countRightAnswers + "in " + document.title + "quiz at SillyQuestions! Try it yourself, and see if you can beat me!",
+        text: "Hey! I scored " + countRightAnswers + '/' + questions.length + " in " + document.title + " quiz at SillyQuestions! Try it yourself, and see if you can beat me!",
         url:  document.querySelector('link[rel=canonical]') ? document.querySelector('link[rel=canonical]').href : document.location.href,
       }).then(() => {
         console.log('Thanks for sharing!');
@@ -152,4 +154,7 @@ shareScore.addEventListener('click', event => {
     }
   });
 
-
+//!This line below causes JS to malfunction
+// if(navigator.onLine = true){
+//     document.getElementsByTagName('body').style.background-image = 'none';
+// }

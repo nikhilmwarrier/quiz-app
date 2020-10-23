@@ -3,7 +3,7 @@
     "short_name": "SillyQuestions",
     "theme_color": "#8400ff",
     "background_color": "#8400ff",
-    "display": "standalone",
+    "display": "minimal-ui",
     "Scope": "/",
     "start_url": "index.html",
     "icons": [
