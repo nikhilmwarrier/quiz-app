@@ -9,7 +9,7 @@ const assets = [
                 '/res/icon_192.png',
                 '/res/icon_144.png',
                 '/res/icon_512.png',
-                '/manifest.json'
+                '/nfinetech_256.png'
                ];
 
 //Install service worker
