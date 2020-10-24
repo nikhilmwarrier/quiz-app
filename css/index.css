@@ -292,13 +292,14 @@ a:hover {
 .install-btn {
   position: fixed;
   bottom: 43px;
-  right: 10px;
+  right: 2px;
   padding: 10px;
   background-color: rgb(37, 188, 248);
   border: 0px;
   font-size: 1rem;
   font-weight: bold;
   color: white;
+  z-index: 1000;
 }
 
 .bottombar {
